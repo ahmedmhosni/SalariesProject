@@ -2,7 +2,7 @@
 -- To select exact top rows from the table, we have to write the number of row along with * astric
 SELECT *
 FROM [Salaries]
-LIMIT 100
+LIMIT ('1000')
 
 -- Time to know the available job titles
 SELECT DISTINCT(JobTitle)
@@ -49,4 +49,4 @@ WHERE (EmployeeName) LIKE 'P%'
 -- Select all having spesfic keywords or words as follow
 SELECT *
 FROM [Salaries]
-WHERE (EmployeeName) IN ()
+WHERE (EmployeeName) LIKE ('PIERRE%')
