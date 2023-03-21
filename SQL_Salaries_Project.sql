@@ -54,3 +54,14 @@ WHERE (EmployeeName) LIKE ('PIERRE%')
 SELECT YEAR, Count (Year)
 FROM [Salaries]
 Group By Year
+
+-- Count of each value from distinct (Complex)
+SELECT JobTitle, Count (JobTitle)
+FROM [Salaries]
+Group By JobTitle
+
+-- Count of each value from distinct (Complex)
+SELECT JobTitle, Count (JobTitle)
+FROM [Salaries]
+Group By JobTitle
+ORDER BY count(JobTitle) DESC
