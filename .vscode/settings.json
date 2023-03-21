@@ -1,0 +1,25 @@
+{
+    "sqltools.connections": [
+        {
+            "mssqlOptions": {
+                "appName": "SQLTools",
+                "useUTC": true,
+                "encrypt": true
+            },
+            "previewLimit": 50,
+            "server": "sql.bsite.net\\MSSQL2016",
+            "port": 1433,
+            "driver": "MSSQL",
+            "name": "Database_tasks",
+            "database": "ahmedmosni_",
+            "username": "ahmedmhosni_",
+            "password": "Ahmed#123456"
+        },
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "database": "${workspaceFolder:Analyzing-Company-Salaries}/database.sqlite",
+            "name": "Local Salaries"
+        }
+    ]
+}
