@@ -60,3 +60,33 @@ SELECT JobTitle, Count (JobTitle)
 FROM [Salaries]
 Group By JobTitle
 ORDER BY count(JobTitle) DESC
+
+-- here is selecting first 2 coloumn that we will be working on 
+SELECT JobTitle, TotalPay
+FROM Salaries;
+
+-- here is selecting first 2 coloumn that we will be working on 
+SELECT JobTitle, TotalPay
+FROM Salaries
+WHERE JobTitle = 'AIRPORT ELECTRICIAN';
+
+
+SELECT SUM(TotalPay) as total
+FROM Salaries
+WHERE JobTitle = 'AIRPORT ELECTRICIAN';
+
+
+-- summ of each jobtitle total pay
+SELECT JobTitle, SUM(TotalPay) as TotalPay_sum
+FROM Salaries
+GROUP BY JobTitle;
+
+
+-- Lets have the hights jobtitles pay
+SELECT JobTitle, SUM(TotalPay) as TotalPay_sum
+FROM Salaries
+GROUP BY JobTitle
+ORDER BY TotalPay_sum DESC
+LIMIT 10;
+
+
